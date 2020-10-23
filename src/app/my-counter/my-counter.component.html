@@ -1,0 +1,15 @@
+<div *ngIf="count$ | async as count">
+  <button (click)="save(count)">Save</button>
+  <button (click)="load()">load</button>
+</div>
+
+<br>
+
+<button (click)="increment()">Increment</button>
+Current Count: {{count$ | async}}
+<button (click)="decrement()">Decrement</button>
+
+<br>
+
+<button (click)="reset()">Reset Counter</button>
+
